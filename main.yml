@@ -24,6 +24,17 @@
       tags: ['mas']
 
   tasks:
+    - name: Install Vundle for Vim.
+      git:
+        repo: https://github.com/gmarik/vundle.git
+        dest: "{{ ansible_env.HOME }}/.vim/bundle/vundle"
+      tags: ['dotfiles']
+
+    - name: Execute custom commands for setting up dotfiles.
+      shell: "{{ item }}"
+      with_items: "{{ dotfiles_custom_setup_commands }}"
+      tags: ['dotfiles']
+
     - include_tasks: tasks/ansible-setup.yml
 
     - include_tasks: tasks/openssh-keypair.yml

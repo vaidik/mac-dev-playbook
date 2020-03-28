@@ -19,6 +19,8 @@ dotfiles_files:
   - .vim
   - aliases
   - .iterm2
+dotfiles_custom_setup_commands:
+  - vim +BundleInstall +qall
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -36,6 +38,7 @@ homebrew_installed_packages:
   #- httpie
   - iperf
   - libevent
+  - kubectl
   - sqlite
   - mcrypt
   - nmap
@@ -43,6 +46,7 @@ homebrew_installed_packages:
   #- nvm
   #- php
   - pyenv
+  - pyenv-virtualenv
   - ssh-copy-id
   #- cowsay
   - readline
@@ -62,6 +66,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - alfred
   - chromedriver
   - docker
   - dropbox
@@ -105,10 +110,9 @@ npm_packages: []
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
-pip_packages: []
-  # - name: mkdocs
-  #   state: present # present/absent/latest, default: present
-  #   version: "0.16.3" # default: N/A
+pip_packages:
+  - virtualenv
+  - virtualenvwrapper
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
