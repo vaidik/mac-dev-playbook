@@ -6,15 +6,19 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_home: '~'
+dotfiles_repo: https://github.com/vaidik/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Development/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
-  - .inputrc
-  - .osx
+    #- .inputrc
+    #- .osx
   - .vimrc
+  - .vim
+  - aliases
+  - .iterm2
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -27,6 +31,7 @@ homebrew_installed_packages:
   - github/gh/gh
   - go
   - gpg
+  - htop
   #- haskell-platform
   #- httpie
   - iperf
