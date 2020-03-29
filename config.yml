@@ -25,6 +25,7 @@ dotfiles_custom_setup_commands:
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
+  - aws-iam-authenticator
   - bash-completion
   - doxygen
   - gettext
@@ -59,10 +60,12 @@ homebrew_installed_packages:
   - wrk
   - xz
   - zlib
+  - zsh-kubectl-prompt
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - superbrothers/zsh-kubectl-prompt
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -83,6 +86,8 @@ homebrew_cask_apps:
   #- sublime-text
   #- transmit
   #- vagrant
+  - tunnelblick
+  - zoomus
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
