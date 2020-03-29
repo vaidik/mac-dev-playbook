@@ -86,7 +86,7 @@ homebrew_cask_apps:
   #- sublime-text
   #- transmit
   #- vagrant
-  - tunnelblick
+  - https://raw.githubusercontent.com/caskroom/homebrew-cask/639e6f765fcc990170683013412ecec66084684a/Casks/tunnelblick.rb
   - zoomus
 
 # See `geerlingguy.mas` role documentation for usage instructions.
