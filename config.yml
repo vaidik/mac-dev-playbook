@@ -79,6 +79,7 @@ homebrew_cask_apps:
   #- handbrake
   #- licecap
   - macvim
+  - notion
   - sequel-pro
   - skitch
   - slack
