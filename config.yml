@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - autoconf
   - aws-iam-authenticator
   - bash-completion
+  - brew
   - doxygen
   - gettext
   #- gifsicle
@@ -41,11 +42,14 @@ homebrew_installed_packages:
   - libevent
   - kubectl
   - sqlite
+  - libpq
   - mcrypt
+  - mysql-client
   - nmap
   #- node
   #- nvm
   #- php
+  - psql
   - pyenv
   - pyenv-virtualenv
   - ssh-copy-id
@@ -55,6 +59,7 @@ homebrew_installed_packages:
   - tmux
   - openssl
   - pv
+  - skaffold
   - watch
   - wget
   - wrk
@@ -85,10 +90,11 @@ homebrew_cask_apps:
   - skitch
   - slack
   - spectacle
+  - spotify
   #- sublime-text
   #- transmit
   #- vagrant
-  - https://raw.githubusercontent.com/caskroom/homebrew-cask/639e6f765fcc990170683013412ecec66084684a/Casks/tunnelblick.rb
+  #- https://raw.githubusercontent.com/caskroom/homebrew-cask/639e6f765fcc990170683013412ecec66084684a/Casks/tunnelblick.rb
   - zoomus
 
 # See `geerlingguy.mas` role documentation for usage instructions.
