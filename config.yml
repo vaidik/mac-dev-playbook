@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - aws-iam-authenticator
   - bash-completion
   - brew
+  - datawire/blackbird/telepresence
   - doxygen
   - gettext
   #- gifsicle
@@ -35,7 +36,9 @@ homebrew_installed_packages:
   - github/gh/gh
   - go
   - gpg
+  - helm
   - htop
+  - hub
   #- haskell-platform
   #- httpie
   - iperf
@@ -43,13 +46,15 @@ homebrew_installed_packages:
   - kubectl
   - sqlite
   - libpq
+  - llvm
   - mcrypt
+  - minikube
   - mysql-client
   - nmap
   #- node
   #- nvm
   #- php
-  - psql
+  - libpq
   - pyenv
   - pyenv-virtualenv
   - ssh-copy-id
@@ -60,6 +65,8 @@ homebrew_installed_packages:
   - openssl
   - pv
   - skaffold
+  - terraform
+  - vault
   - watch
   - wget
   - wrk
@@ -86,6 +93,7 @@ homebrew_cask_apps:
   #- licecap
   - macvim
   - notion
+  - osxfuse
   - sequel-pro
   - skitch
   - slack
